@@ -1,0 +1,38 @@
+{
+    "name": "adiwidjaja/app-template",
+    "type": "project",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Andy Adiwidjaja",
+            "email": "adiwidjaja@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "silverstripe/recipe-core": "^4.11",
+        "silverstripe/admin": "^1.11",
+        "silverstripe/asset-admin": "^1.11"
+    },
+    "config": {
+        "allow-plugins": {
+            "silverstripe/recipe-plugin": true,
+            "composer/installers": true,
+            "silverstripe/vendor-plugin": true
+        }
+    },
+    "extra": {
+        "project-files-installed": [
+            "app/.htaccess",
+            "app/_config.php",
+            "app/_config/mimevalidator.yml",
+            "app/_config/mysite.yml"
+        ],
+        "public-files-installed": [
+            ".htaccess",
+            "index.php",
+            "web.config"
+        ]
+    }
+}
